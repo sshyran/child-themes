@@ -20,8 +20,26 @@ Text Domain: wpcanvas2-child
 	width: 33.3333%;
 	display: inline-block;
 	padding-right: 10px;
-	margin-bottom: 1.5em;
+	margin-bottom: 10px;
 	text-align: center;
+}
+.all-categories .category-wrapper a,
+.all-categories .category-wrapper a:hover,
+.all-categories .category-wrapper a:focus,
+.all-categories .category-wrapper a:visited,
+.all-categories .category-wrapper a:active {
+	text-decoration: none;
+}
+.all-categories .category-wrapper a:hover {
+	background-color: #dddddd;
+}
+.all-categories .category-wrapper a {
+	background-color: #eeeeee;
+	display: block;
+}
+.all-categories .category-title h4 {
+	margin-bottom: 0;
+	padding: 0.4em;
 }
 .all-categories .cfi-featured-image {
 	margin: 0 0 0.4em 0;
