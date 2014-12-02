@@ -26,6 +26,51 @@ Text Domain: wpcanvas2-child
 .all-categories .cfi-featured-image {
 	margin: 0 0 0.4em 0;
 }
+body.search .wpc2-post.type-post,
+body.archive .wpc2-post.type-post {
+	margin-left: 0;
+}
+.search .page-header,
+.search .entry-header,
+.archive .page-header,
+.archive .entry-header {
+	margin-bottom: 0;
+}
+body.search .wpc2-post,
+body.search .hentry,
+body.archive .hentry {
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+.search .search-submit,
+.archive .search-submit {
+	display: none;
+}
+.search .search-field,
+.archive .search-field {
+	width: 100%;
+}
+
+.wc-shortcodes-font-awesome-enabled.search .previous-category:before,
+.wc-shortcodes-font-awesome-enabled.search .entry-title:before,
+.wc-shortcodes-font-awesome-enabled.archive .entry-title:before {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.wc-shortcodes-font-awesome-enabled.search .entry-title:before,
+.wc-shortcodes-font-awesome-enabled.archive .entry-title:before {
+	content: "\f0f6";
+	margin-right: 10px;
+}
+.wc-shortcodes-font-awesome-enabled.search .previous-category:before {
+	content: "\f060";
+	margin-right: 10px;
+}
 @media screen and (max-width: 768px) {
 	body .all-categories .children {
 		margin-right: 0;

@@ -1,9 +1,23 @@
 <?php
 
 function wpcanvas2_child_enqueue_parent_theme_style() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
+	wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'wpcanvas2_child_enqueue_parent_theme_style' );
+
+function wpcanvas2_child_add_page_attributes() {
+	add_post_type_support( 'post', 'page-attributes' );
+}
+add_action( 'init', 'wpcanvas2_child_add_page_attributes' );
+
+function wpcanvas2_child_post_query( $query ) {
+	if ( ! is_admin() ) {
+		if ( $query->is_main_query() ) {
+			$query->set( 'orderby', 'menu_order' );
+		}
+	}
+}
+add_action('pre_get_posts', 'wpcanvas2_child_post_query');
 
 /**
  * Create HTML list of categories.
