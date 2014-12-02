@@ -7,6 +7,7 @@
  * @package WPCanvas2
  */
 global $category_link;
+global $category_name;
 ?>
 
 <section class="no-results not-found">
