@@ -164,7 +164,7 @@ class WPCanvas2_Child_Walker_Category extends Walker_Category {
 			$images = get_option( 'cfi_featured_images' );
 			$output .= '<div class="category-wrapper">';
 				if( ! empty( $images ) && isset( $images[$category->term_id] ) ) {
-					$output .= '<div class="cfi-featured-image">' . $ahref . wp_get_attachment_image( $images[$category->term_id], 'large' ) . '</a></div>';
+					$output .= '<div class="cfi-featured-image">' . $ahref . wp_get_attachment_image( $images[$category->term_id], 'thumbnail' ) . '</a></div>';
 				}
 				$output .= '<div class="category-title"><h4>'.$link.'</h4></div>';
 			$output .= '</div>';
