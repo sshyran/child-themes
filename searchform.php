@@ -1,4 +1,7 @@
-<?php global $category_id; ?>
+<?php
+global $category_id;
+?>
+
 <?php if ( isset( $category_id ) && ! empty( $category_id ) ) : ?>
 	<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 		<label>
