@@ -158,7 +158,7 @@ class WPCanvas2_Child_Walker_Category extends Walker_Category {
 		}
 
 		if ( 0 == $depth ) {
-			$output .= "<h1>$link</h1>\n";
+			$output .= "<h1 id='$category->slug'>$link</h1>\n";
 		}
 		else {
 			$images = get_option( 'cfi_featured_images' );
