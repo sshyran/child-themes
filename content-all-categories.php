@@ -9,33 +9,26 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content">
 		<?php 
-			$args = array(
-			'show_option_all'    => '',
-			'orderby'            => 'name',
-			'order'              => 'ASC',
-			'style'              => 'list',
-			'show_count'         => 0,
-			'hide_empty'         => 1,
-			'use_desc_for_title' => 1,
-			'child_of'           => 0,
-			'feed'               => '',
-			'feed_type'          => '',
-			'feed_image'         => '',
-			'exclude'            => '',
-			'exclude_tree'       => '',
-			'include'            => '',
-			'hierarchical'       => 1,
-			'title_li'           => '',
-			'show_option_none'   => __( 'No categories' ),
-			'number'             => null,
-			'echo'               => 1,
-			'depth'              => 2,
-			'current_category'   => 0,
-			'pad_counts'         => 0,
-			'taxonomy'           => 'category',
-			'walker'             => new WPCanvas2_Child_Walker_Category
-			);
-			wp_list_categories( $args ); 
+		$defaults = array(
+			'theme_location'  => 'all-categories',
+			'menu'            => '',
+			'container'       => 'div',
+			'container_class' => 'nav-all-categories',
+			'container_id'    => '',
+			'menu_class'      => 'menu',
+			'menu_id'         => '',
+			'echo'            => true,
+			'fallback_cb'     => '',
+			'before'          => '',
+			'after'           => '',
+			'link_before'     => '',
+			'link_after'      => '',
+			'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+			'depth'           => 2,
+			'walker'          => new WPCanvas2_Child_Walker_Nav_Menu
+		);
+
+		wp_nav_menu( $defaults );
 		?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

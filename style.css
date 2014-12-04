@@ -5,7 +5,7 @@ Description: Knowledge Base Child Theme for Angie Makes
 Author: Angie Makes
 Author URI: http://angiemakes.com
 Template: meadowbrook-premium
-Version: 1.0.3
+Version: 1.0.4
 Tags: black, blue, brown, gray, green, orange, pink, purple, red, silver, tan, white, yellow, dark, light, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, fluid-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, front-page-post-form, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
 Text Domain: wpcanvas2-child
 */
@@ -13,36 +13,50 @@ Text Domain: wpcanvas2-child
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
-.all-categories .children {
-	margin-right: -10px;
+.nav-all-categories ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: block;
 }
-.all-categories .category-wrapper {
+.nav-all-categories li {
+	display: block;
+}
+.nav-all-categories li:nth-child(3n+4) {
+	clear: left;
+}
+.nav-all-categories ul.sub-menu {
+	margin-right: -10px;
+	margin-bottom: 1.5em;
+}
+.nav-all-categories ul.sub-menu li {
 	width: 33.3333%;
 	display: inline-block;
+	float: left;
 	padding-right: 10px;
 	margin-bottom: 10px;
 	text-align: center;
 }
-.all-categories .category-wrapper a,
-.all-categories .category-wrapper a:hover,
-.all-categories .category-wrapper a:focus,
-.all-categories .category-wrapper a:visited,
-.all-categories .category-wrapper a:active {
+.nav-all-categories ul.sub-menu li a,
+.nav-all-categories ul.sub-menu li a:hover,
+.nav-all-categories ul.sub-menu li a:focus,
+.nav-all-categories ul.sub-menu li a:visited,
+.nav-all-categories ul.sub-menu li a:active {
 	text-decoration: none;
 }
-.all-categories .category-wrapper a:hover {
+.nav-all-categories ul.sub-menu li a:hover {
 	background-color: #dddddd;
+	color: inherit;
 }
-.all-categories .category-wrapper a {
+.nav-all-categories ul.sub-menu li a {
 	background-color: #eeeeee;
 	display: block;
 }
-.all-categories .category-title h4 {
+.nav-all-categories ul.sub-menu li h4 {
 	margin-bottom: 0;
-	padding: 0.4em;
 }
-.all-categories .cfi-featured-image {
-	margin: 0 0 0.4em 0;
+.nav-all-categories ul.sub-menu li h4 a {
+	padding: 0.4em;
 }
 body.search .wpc2-post.type-post,
 body.archive .wpc2-post.type-post {
@@ -93,10 +107,10 @@ body.archive .hentry {
 	margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
-	body .all-categories .children {
+	body .nav-all-categories .sub-menu {
 		margin-right: 0;
 	}
-	body .all-categories .category-wrapper {
+	body .nav-all-categories ul.sub-menu li {
 		width: 100%;
 		display: block;
 		padding-right: 0;
