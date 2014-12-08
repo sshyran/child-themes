@@ -5,7 +5,7 @@ Description: Knowledge Base Child Theme for Angie Makes
 Author: Angie Makes
 Author URI: http://angiemakes.com
 Template: meadowbrook-premium
-Version: 1.0.5
+Version: 1.0.6
 Tags: black, blue, brown, gray, green, orange, pink, purple, red, silver, tan, white, yellow, dark, light, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, fluid-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, front-page-post-form, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
 Text Domain: wpcanvas2-child
 */
@@ -103,13 +103,12 @@ body.archive .hentry {
 }
 .wc-shortcodes-font-awesome-enabled.search .entry-title:before,
 .wc-shortcodes-font-awesome-enabled.archive .entry-title:before {
-	content: "\f08a";
+	content: "\f0e6";
 	margin-right: 10px;
 }
 .wc-shortcodes-font-awesome-enabled.search .wpc2-post.tag-basic .entry-title:before,
 .wc-shortcodes-font-awesome-enabled.archive .wpc2-post.tag-basic .entry-title:before {
-	content: "\f005";
-	color: #f2e499;
+	content: "\f08a";
 }
 .wc-shortcodes-font-awesome-enabled.search .wpc2-post.format-image .entry-title:before,
 .wc-shortcodes-font-awesome-enabled.archive .wpc2-post.format-image .entry-title:before {
