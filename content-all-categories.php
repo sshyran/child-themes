@@ -8,6 +8,8 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content">
+		<?php the_content( __( 'Read More', 'wpcanvas2-child' ) ); ?>
+
 		<?php 
 		$defaults = array(
 			'theme_location'  => 'all-categories',
