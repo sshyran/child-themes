@@ -109,7 +109,7 @@ body.archive .hentry {
 }
 .wc-shortcodes-font-awesome-enabled.search .wpc2-post.tag-basic .entry-title:before,
 .wc-shortcodes-font-awesome-enabled.archive .wpc2-post.tag-basic .entry-title:before {
-	content: "\f08a";
+	content: "\f006";
 }
 .wc-shortcodes-font-awesome-enabled.search .wpc2-post.format-image .entry-title:before,
 .wc-shortcodes-font-awesome-enabled.archive .wpc2-post.format-image .entry-title:before {
