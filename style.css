@@ -73,6 +73,7 @@ body.search .hentry,
 body.archive .hentry {
 	margin-bottom: 1em;
 	padding-bottom: 1em;
+	border-bottom-width: 0;
 }
 .search .search-submit,
 .archive .search-submit {
